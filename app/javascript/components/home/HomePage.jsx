@@ -15,7 +15,7 @@
 // with Greenlight; if not, see <http://www.gnu.org/licenses/>.
 
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import { useNavigate, useSearchParams } from "react-router-dom";
@@ -30,7 +30,6 @@ export default function HomePage() {
   const [searchParams, setSearchParams] = useSearchParams();
   const error = searchParams.get("error");
   const success = searchParams.get("success");
-  const { data: recordValue } = useRoomConfigValue("record");
   const { data: env } = useEnv();
 
   // Redirects the user to the proper page based on signed in status and CreateRoom permission
