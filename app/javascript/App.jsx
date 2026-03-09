@@ -14,7 +14,7 @@
 // You should have received a copy of the GNU Lesser General Public License along
 // with Greenlight; if not, see <http://www.gnu.org/licenses/>.
 
-import { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import { Container, Form, Spinner } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 import {
